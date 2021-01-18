@@ -24,16 +24,6 @@ class GalleryFragment : Fragment() {
     private val viewmodel: GalleryViewmodel by activityViewModels()
     private val binding get() = _binding
 
-    companion object {
-        fun newInstance(): GalleryFragment {
-            val args = Bundle()
-            val fragment = GalleryFragment()
-            fragment.arguments = args
-            return fragment
-        }
-    }
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
