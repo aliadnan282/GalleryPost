@@ -30,6 +30,12 @@ class GalleryFragmentTest{
     @Test
     fun is_progressbar_visible(){
         Espresso.onView(ViewMatchers.withId(R.id.pb_loading))
-            .check(ViewAssertions.matches(Matchers.not(ViewMatchers.isDisplayed())))
+            .check(ViewAssertions.matches((ViewMatchers.isDisplayed())))
+    }
+
+    @Test
+    fun is_recyclerview_visible(){
+        Espresso.onView(ViewMatchers.withId(R.id.rv_gallery))
+            .check(ViewAssertions.matches((ViewMatchers.isDisplayed())))
     }
 }
