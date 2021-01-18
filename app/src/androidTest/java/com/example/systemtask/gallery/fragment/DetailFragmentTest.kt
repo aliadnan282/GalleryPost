@@ -22,8 +22,13 @@ class DetailFragmentTest {
     }
 
     //@Test
-    fun is_image_visible() {
+    fun is_textview_visible() {
         Espresso.onView(ViewMatchers.withId(R.id.tv_detail_title))
+            .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+    }
+
+    fun is_image_visible() {
+        Espresso.onView(ViewMatchers.withId(R.id.iv_detail_thumnail))
             .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
     }
 }
