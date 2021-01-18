@@ -22,7 +22,6 @@ class GalleryFragmentTest{
     @get: Rule
     val activityScenarioRule = ActivityScenarioRule(GalleryActivity::class.java)
 
-//    @Before
     fun launch_fragment(){
         val fragment= launchFragmentInContainer<GalleryFragment>()
     }
